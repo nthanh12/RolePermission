@@ -5,10 +5,10 @@
         public static readonly Dictionary<string, PermissionContent> appConfigs = new()
         {
             // Dashboard
-            {PermissionKeys.MenuDashboard, new(nameof(PermissionKeys.MenuDashboard), PermissionLabel.MenuDashboard )},
+            { PermissionKeys.MenuDashboard, new(nameof(PermissionKeys.MenuDashboard), PermissionLabel.MenuDashboard )},
 
-            {PermissionKeys.MenuConfig, new(nameof(PermissionKeys.MenuConfig), PermissionLabel.MenuConfig )},
-            {PermissionKeys.MenuRoleManager, new(nameof(PermissionKeys.MenuRoleManager), PermissionLabel.MenuRoleManager )},
+            { PermissionKeys.MenuConfig, new(nameof(PermissionKeys.MenuConfig), PermissionLabel.MenuConfig )},
+            { PermissionKeys.MenuRoleManager, new(nameof(PermissionKeys.MenuRoleManager), PermissionLabel.MenuRoleManager )},
             { PermissionKeys.ButtonCreateRole, new(nameof(PermissionKeys.ButtonCreateRole), PermissionLabel.ButtonCreateRole, PermissionKeys.MenuRoleManager)},
             { PermissionKeys.TableRole, new(nameof(PermissionKeys.TableRole), PermissionLabel.TableRole, PermissionKeys.MenuRoleManager)},
             { PermissionKeys.ButtonDetailRole, new(nameof(PermissionKeys.ButtonDetailRole), PermissionLabel.ButtonDetailRole, PermissionKeys.TableRole)},

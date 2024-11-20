@@ -17,7 +17,7 @@ namespace RolePermission.Domains.Entities
         [Unicode(false)]
         public string PermissionKey { get; set; } = null!;
         public int RoleId { get; set; }
-        public Role Role { get; set; }
+        public Role Role { get; set; } = null!;
 
         #region audit
         public DateTime? CreatedDate { get; set; }

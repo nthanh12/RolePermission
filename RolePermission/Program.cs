@@ -1,11 +1,26 @@
+using Microsoft.EntityFrameworkCore;
+using RolePermission.Applications.UserModules.Abstracts;
+using RolePermission.Applications.UserModules.Implements;
+using RolePermission.Infrastructures.Persistances;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddHttpContextAccessor();
+//Config connect to sql server
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+});
 // Add services to the container.
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 

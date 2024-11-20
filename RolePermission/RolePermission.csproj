@@ -23,16 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Applications\UserModules\Abstracts\" />
     <Folder Include="Applications\UserModules\Dtos\ConfigPermission\" />
-    <Folder Include="Applications\UserModules\Dtos\Role\" />
-    <Folder Include="Applications\UserModules\Dtos\Permission\" />
-    <Folder Include="Applications\UserModules\Implements\" />
-    <Folder Include="Infrastructures\Persistances\" />
     <Folder Include="Shared\Filters\" />
     <Folder Include="Shared\Middlewares\" />
     <Folder Include="Shared\WebAPIBase\" />
-    <Folder Include="Shared\Utils\" />
   </ItemGroup>
 
 </Project>
