@@ -29,7 +29,6 @@
     <Folder Include="Applications\UserModules\Dtos\Permission\" />
     <Folder Include="Applications\UserModules\Implements\" />
     <Folder Include="Infrastructures\Persistances\" />
-    <Folder Include="Shared\ApplicationBase\Common\Validations\" />
     <Folder Include="Shared\Filters\" />
     <Folder Include="Shared\Middlewares\" />
     <Folder Include="Shared\WebAPIBase\" />
