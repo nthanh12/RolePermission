@@ -13,7 +13,7 @@ namespace RolePermission.Domains.Entities
         public int Id { get; set; }
 
         [MaxLength(50)]
-        public string Name { get; set; }
+        public string UserName { get; set; }
 
         [MaxLength(512)]
         public string Password { get; set; }
