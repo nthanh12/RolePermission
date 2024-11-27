@@ -6,7 +6,7 @@ using RolePermission.Shared.Exceptions;
 
 namespace RolePermission.Applications.UserModules.Implements
 {
-    public class UserService : IUserService
+    public class UserService : IUserServices
     {
         private readonly ILogger<UserService> _logger;
         private readonly ApplicationDbContext _dbContext;

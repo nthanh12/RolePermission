@@ -9,8 +9,8 @@ namespace RolePermission.Controllers
     [ApiController]
     public class UserController : ApiControllerBase
     {
-        private readonly IUserService _userService;
-        public UserController(ILogger<UserController> logger, IUserService userService) : base(logger)
+        private readonly IUserServices _userService;
+        public UserController(ILogger<UserController> logger, IUserServices userService) : base(logger)
         {
             _userService = userService;
         }

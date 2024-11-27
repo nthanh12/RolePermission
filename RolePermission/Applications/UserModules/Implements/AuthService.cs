@@ -52,7 +52,7 @@ namespace RolePermission.Applications.UserModules.Implements
         public void RegisterUser (CreateUserDto user)
         {
             _logger.LogInformation($"{nameof(RegisterUser)}: input = {JsonSerializer.Serialize(user)}");
-            var check = _context.Users.FirstOrDefault(x = x.UserName = user.Username);
+            var check = _context.Users.FirstOrDefault(x => x.UserName == user.Username);
             if (check != null)
             {
                 throw new UserFriendlyException(ErrorCode.UsernameIsExist);

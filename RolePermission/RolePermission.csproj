@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <Folder Include="Applications\UserModules\Dtos\ConfigPermission\" />
-    <Folder Include="Shared\Filters\" />
     <Folder Include="Shared\Middlewares\" />
   </ItemGroup>
 
